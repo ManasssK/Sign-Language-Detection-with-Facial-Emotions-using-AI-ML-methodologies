@@ -11,7 +11,7 @@ imgSize = 300
 counter = 0
 
 # Use raw string to avoid issues with backslashes
-folder = r"C:\Users\jmana\OneDrive\Desktop\Sign Language\Data\Smile"
+"""folder = Add you Data collection Folder"""
 
 while True:
     success, img = cap.read()
