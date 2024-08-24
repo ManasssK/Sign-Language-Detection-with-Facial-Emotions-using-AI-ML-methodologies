@@ -9,8 +9,8 @@ cap = cv2.VideoCapture(0)
 detector = HandDetector(maxHands=1)
 
 # Specify the paths to the model and label files
-model_path = r"C:\Users\jmana\OneDrive\Desktop\Keras\2\keras_model.h5"
-label_path = r"C:\Users\jmana\OneDrive\Desktop\Keras\2\labels.txt"
+'''model_path = r"C:\Users\jmana\OneDrive\Desktop\Keras\2\keras_model.h5"
+label_path = r"C:\Users\jmana\OneDrive\Desktop\Keras\2\labels.txt"'''
 try:
     classifier = Classifier(model_path, label_path)
 except Exception as e:
@@ -24,7 +24,7 @@ imgSize = 300
 counter = 0
 
 # Define the labels for the classifications
-labels = ["Hello","Yes","No","Help","Thalaiva","Thanks"]
+'''labels = ["Hello","Yes","No","Help","Thalaiva","Thanks"]'''
 
 while True:
     success, img = cap.read()
