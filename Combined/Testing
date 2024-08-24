@@ -12,8 +12,8 @@ cap = cv2.VideoCapture(0)
 hand_detector = HandDetector(maxHands=2)  # Set maxHands to 2
 
 # Paths for sign language model and labels
-sign_model_path = r"C:\Users\jmana\OneDrive\Desktop\Keras\2\keras_model.h5"
-sign_label_path = r"C:\Users\jmana\OneDrive\Desktop\Keras\2\labels.txt"
+'''sign_model_path = r"C:\Users\jmana\OneDrive\Desktop\Keras\2\keras_model.h5"
+sign_label_path = r"C:\Users\jmana\OneDrive\Desktop\Keras\2\labels.txt"'''
 try:
     sign_classifier = Classifier(sign_model_path, sign_label_path)
 except Exception as e:
@@ -23,14 +23,14 @@ except Exception as e:
     exit()
 
 # Initialize face emotion detector
-face_classifier = cv2.CascadeClassifier(r"C:\Users\jmana\OneDrive\Desktop\Face Emotion\haarcascade_frontalface_default.xml")
+'''face_classifier = cv2.CascadeClassifier(r"C:\Users\jmana\OneDrive\Desktop\Face Emotion\haarcascade_frontalface_default.xml")
 emotion_model = load_model(r"C:\Users\jmana\OneDrive\Desktop\Face Emotion\model.h5")
-emotion_labels = ['Angry', 'Disgust', 'Fear', 'Happy', 'Neutral', 'Sad', 'Surprise']
+emotion_labels = ['Angry', 'Disgust', 'Fear', 'Happy', 'Neutral', 'Sad', 'Surprise']'''
 
 # Parameters
 offset = 20
 imgSize = 300
-labels = ["Hello", "Yes", "No", "Help", "Thalaiva", "Thanks"]
+'''labels = ["Hello", "Yes", "No", "Help", "Thalaiva", "Thanks"]'''
 
 # Set the window size (width x height)
 window_width = 800
